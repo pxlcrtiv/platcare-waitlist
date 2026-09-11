@@ -27,16 +27,12 @@ No code changes needed: static HTML deploys as-is from any branch
 
 GitHub Pages stays as a free fallback mirror (serves from `master` root).
 
-## How the waitlist captures signups (no-cost)
-The form posts to **Formsubmit.co** (free, no account required). Each submission is emailed
-to the address in the form's `action` URL. To receive signups in your own inbox:
+## How the waitlist captures signups
+The form is a **Kit inline embed** (`<script data-uid="ca0c0d3185" ...>` in `index.html`).
+Every signup lands directly in Kit tagged `waitlist` and triggers the welcome automation.
+Edit copy/design in Kit (Poplar form) — changes go live automatically, no deploy needed.
 
-1. Open `index.html`.
-2. Find: `action="https://formsubmit.co/246b505bd4c7a320a2c97753f2b4fee4"`
-3. Replace the token with yours if needed (Formsubmit → your form's activation string).
-4. Commit + push. Done — no backend, no database, no cost.
-
-Long-term: swap Formsubmit for the mailing-list embed (see ticket 17).
+(Formsubmit was the original capture method; retired once the Kit embed went live.)
 
 ## Early-adopter incentives (listed on the page)
 1. **3 months free Premium** access for every founding member.

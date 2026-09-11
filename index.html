@@ -88,6 +88,7 @@
     .field input{width:100%;padding:13px 14px;border:1px solid #d4e3da;border-radius:12px;font-size:1rem}
     .field input:focus{outline:none;border-color:var(--green-500);box-shadow:0 0 0 3px rgba(47,158,99,.15)}
     .form-card .btn{width:100%;margin-top:6px}
+    .kit-form-wrap{max-width:880px;margin:0 auto}
     .privacy{font-size:.78rem;color:var(--muted);margin-top:14px}
     .count{font-weight:800;color:var(--green-700)}
     .how{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -176,36 +177,9 @@
 
 <section id="waitlist" class="waitlist">
   <div class="wrap center">
-    <div class="form-card">
-      <h3>Join the PlantCare waitlist</h3>
-      <p>Be first through the door. <span class="count" id="count">1,200+</span> plant lovers already waiting.</p>
-      <!--
-        WAITLIST CAPTURE:
-        This form posts to Formsubmit.co (free, no account needed) which emails
-        each signup to the address below. To receive signups in YOUR inbox,
-        change the action URL email to your own, e.g.
-        action="https://formsubmit.co/246b505bd4c7a320a2c97753f2b4fee4"
-      -->
-      <form action="https://formsubmit.co/246b505bd4c7a320a2c97753f2b4fee4" method="POST">
-        <input type="hidden" name="_subject" value="🌿 New PlantCare waitlist signup" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="https://plantcare.app/?joined=1" />
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="Your name" required />
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="you@example.com" required />
-        </div>
-        <div class="field">
-          <label for="plants">How many plants do you care for?</label>
-          <input id="plants" type="text" name="plants" placeholder="e.g. 6 (optional)" />
-        </div>
-        <button class="btn" type="submit">Claim my early-access spot →</button>
-      </form>
-      <p class="privacy">No spam. One launch email + your perks. Unsubscribe anytime.</p>
+    <div class="kit-form-wrap">
+      <!-- Kit embed: PlantCare waitlist (Poplar form). Edit copy/design in Kit — updates go live automatically. -->
+      <script async data-uid="ca0c0d3185" src="https://emmanuel-eddie-n.kit.com/ca0c0d3185/index.js"></script>
     </div>
   </div>
 </section>
