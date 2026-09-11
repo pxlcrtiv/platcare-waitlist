@@ -32,8 +32,8 @@ The form posts to **Formsubmit.co** (free, no account required). Each submission
 to the address in the form's `action` URL. To receive signups in your own inbox:
 
 1. Open `index.html`.
-2. Find: `action="https://formsubmit.co/38929261+pxlcrtiv@users.noreply.github.com"`
-3. Replace the email with yours, e.g. `action="https://formsubmit.co/you@yourdomain.com"`.
+2. Find: `action="https://formsubmit.co/pxlcrtiv@gmail.com"`
+3. Replace the email with yours if needed, e.g. `action="https://formsubmit.co/hello@plantcare.app"`.
 4. Commit + push. Done — no backend, no database, no cost.
 
 Long-term: swap Formsubmit for the mailing-list embed (see ticket 17).
